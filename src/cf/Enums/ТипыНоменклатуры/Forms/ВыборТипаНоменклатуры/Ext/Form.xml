@@ -1,0 +1,2358 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выберите тип номенклатуры</v8:content>
+		</v8:item>
+		<v8:item>
+			<v8:lang>en</v8:lang>
+			<v8:content>Select item type</v8:content>
+		</v8:item>
+	</Title>
+	<Width>62</Width>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНастройкиТипаНоменклатуры" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки типа номенклатуры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item type settings</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиТипаНоменклатурыРасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКолонки" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Columns</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКолонкиЛево" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Колонки лево</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Columns left</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКолонкиЛевоРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаТипНоменклатурыТовар" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип номенклатуры товар</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Item type goods item</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТипНоменклатурыТоварРасширеннаяПодсказка" id="27"/>
+									<ChildItems>
+										<RadioButtonField name="ТипНоменклатурыТовар" id="1">
+											<DataPath>ТипНоменклатуры</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подсказка задается программно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНоменклатуры.EnumValue.Товар</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипНоменклатурыТоварКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="ТипНоменклатурыТоварРасширеннаяПодсказка" id="3"/>
+											<Events>
+												<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+										<UsualGroup name="ГруппаОсобенностиТовара" id="39">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Особенности учета товаров</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Goods accounting features</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОсобенностиТовараРасширеннаяПодсказка" id="40"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОсобенностиТовараОтступ" id="41">
+													<ContextMenu name="ДекорацияОсобенностиТовараОтступКонтекстноеМеню" id="42"/>
+													<ExtendedTooltip name="ДекорацияОсобенностиТовараОтступРасширеннаяПодсказка" id="43"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаОсобенностиТовараЗначения" id="44">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Значения особенностей учета товаров</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Goods accounting feature values</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОсобенностиТовараЗначенияРасширеннаяПодсказка" id="45"/>
+													<ChildItems>
+														<RadioButtonField name="ОсобенностьУчетаБезОсобенностейУчета" id="36">
+															<DataPath>ОсобенностьУчета</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.8cc0bd9c-3c71-42d9-9e91-0e24c5f27eae</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ОсобенностьУчетаБезОсобенностейУчетаКонтекстноеМеню" id="37"/>
+															<ExtendedTooltip name="ОсобенностьУчетаБезОсобенностейУчетаРасширеннаяПодсказка" id="38"/>
+															<Events>
+																<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<UsualGroup name="ГруппаОсобенностиТовараЛокализация" id="91">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа особенности товара локализация</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Group goods features localization</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаОсобенностиТовараЛокализацияРасширеннаяПодсказка" id="92"/>
+															<ChildItems>
+																<RadioButtonField name="ОсобенностьУчетаАлкогольнаяПродукция" id="46">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.18beb79a-7168-4553-bf8b-d5feabee5519</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаАлкогольнаяПродукцияКонтекстноеМеню" id="47"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаАлкогольнаяПродукцияРасширеннаяПодсказка" id="48"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаСодержитДрагоценныеМатериалы" id="52">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.66dbb405-f2b6-484c-b39e-1516fc44aae4</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаСодержитДрагоценныеМатериалыКонтекстноеМеню" id="53"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаСодержитДрагоценныеМатериалыРасширеннаяПодсказка" id="54"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПродукцияИзНатуральногоМеха" id="49">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.e04e62d0-456b-4f6c-918d-34ece1e84a40</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПродукцияИзНатуральногоМехаКонтекстноеМеню" id="50"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПродукцияИзНатуральногоМехаРасширеннаяПодсказка" id="51"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКиЗГИСМ" id="55">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.df555a39-d642-448c-974c-5c3980d7c56c</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКиЗГИСМКонтекстноеМеню" id="56"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКиЗГИСМРасширеннаяПодсказка" id="57"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПодконтрольнаяПродукцияВЕТИС" id="58">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.38df1afa-c663-4ce3-8811-9aaa4c45a70f</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПодконтрольнаяПродукцияВЕТИСКонтекстноеМеню" id="59"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПодконтрольнаяПродукцияВЕТИСРасширеннаяПодсказка" id="60"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаТабачнаяПродукция" id="88">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ColumnsCount>1</ColumnsCount>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.8ab3d8a7-e3f0-41d4-8628-228c473bca61</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаТабачнаяПродукцияКонтекстноеМеню" id="89"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаТабачнаяПродукцияРасширеннаяПодсказка" id="90"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаОбувнаяПродукция" id="108">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.963d583d-b0b7-4f78-93f2-f345a57b2e52</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаОбувнаяПродукцияКонтекстноеМеню" id="109"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаОбувнаяПродукцияРасширеннаяПодсказка" id="110"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаЛегкаяПромышленность" id="96">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.b13a98d4-156f-4bc4-8d48-581c0796e760</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаЛегкаяПромышленностьКонтекстноеМеню" id="97"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаЛегкаяПромышленностьРасширеннаяПодсказка" id="98"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаМолочнаяПродукцияПодконтрольнаяВЕТИС" id="105">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.f8de127d-f301-4092-b21c-d8c040d7f110</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаМолочнаяПродукцияПодконтрольнаяВЕТИСКонтекстноеМеню" id="106"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаМолочнаяПродукцияПодконтрольнаяВЕТИСРасширеннаяПодсказка" id="107"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаМолочнаяПродукцияБезВЕТИС" id="123">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.f5a847a4-a878-4e54-b6a4-a130d3823deb</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаМолочнаяПродукцияБезВЕТИСКонтекстноеМеню" id="124"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаМолочнаяПродукцияБезВЕТИСРасширеннаяПодсказка" id="125"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаШины" id="102">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.902ca9a4-718f-4e15-afba-d260bf44ab17</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаШиныКонтекстноеМеню" id="103"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаШиныРасширеннаяПодсказка" id="104"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаФотоаппараты" id="99">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.a494bac5-216b-465d-98a7-aea19a6110cf</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаФотоаппаратыКонтекстноеМеню" id="100"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаФотоаппаратыРасширеннаяПодсказка" id="101"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаДухи" id="94">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.4e3f3891-d8d9-47fc-a6cb-02b6e1fceb6c</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаДухиКонтекстноеМеню" id="95"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаДухиРасширеннаяПодсказка" id="93"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаВелосипеды" id="111">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.ef9d7e89-b8bc-4b79-8c2d-53ce04e78805</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаВелосипедыКонтекстноеМеню" id="112"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаВелосипедыРасширеннаяПодсказка" id="113"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКреслаКоляски" id="114">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.b5aaee82-6680-4189-81c3-34cd217e4b9d</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКреслаКоляскиКонтекстноеМеню" id="115"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКреслаКоляскиРасширеннаяПодсказка" id="116"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаАльтернативныйТабак" id="120">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.89da3256-3db0-4a14-b3c6-020e44889ea5</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаАльтернативныйТабакКонтекстноеМеню" id="121"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаАльтернативныйТабакРасширеннаяПодсказка" id="122"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаУпакованнаяВода" id="117">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.4b67feb2-8010-4b6f-931c-56b738fe6460</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаУпакованнаяВодаКонтекстноеМеню" id="118"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаУпакованнаяВодаРасширеннаяПодсказка" id="119"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаАнтисептики" id="135">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.c2e0ea6c-58a6-4750-8e2e-cd9c64ce8c62</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаАнтисептикиКонтекстноеМеню" id="136"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаАнтисептикиРасширеннаяПодсказка" id="137"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаБАДы" id="132">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.688102d0-3988-4933-b8ca-d7ff343d6922</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаБАДыКонтекстноеМеню" id="133"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаБАДыРасширеннаяПодсказка" id="134"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаНикотиносодержащаяПродукция" id="129">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.49d51449-0773-4879-af87-fe60af24a448</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаНикотиносодержащаяПродукцияКонтекстноеМеню" id="130"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаНикотиносодержащаяПродукцияРасширеннаяПодсказка" id="131"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПиво" id="126">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.2144c1da-5bd3-4ec9-82ff-0f3a520ff42d</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПивоКонтекстноеМеню" id="127"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПивоРасширеннаяПодсказка" id="128"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаБезалкогольноеПиво" id="141">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.f7a2368d-2926-4de1-8ded-a537998a060b</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаБезалкогольноеПивоКонтекстноеМеню" id="142"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаБезалкогольноеПивоРасширеннаяПодсказка" id="143"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаСоковаяПродукция" id="138">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.2a83ac80-b5e5-4d54-95c0-60ac2c462094</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаСоковаяПродукцияКонтекстноеМеню" id="139"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаСоковаяПродукцияРасширеннаяПодсказка" id="140"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаЗерно" id="144">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.d3c34e0b-4f9e-4ebc-b9fe-109781f579ca</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаЗерноКонтекстноеМеню" id="145"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаЗерноРасширеннаяПодсказка" id="146"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаЗерноВЕТИС" id="153">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.38317ad9-7da2-45eb-b23e-d44de2884540</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаЗерноВЕТИСКонтекстноеМеню" id="154"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаЗерноВЕТИСРасширеннаяПодсказка" id="155"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПродуктыПереработкиЗерна" id="147">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.f8ac4400-3e5d-4a67-893e-6ebb6fb1ded3</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПродуктыПереработкиЗернаКонтекстноеМеню" id="148"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПродуктыПереработкиЗернаРасширеннаяПодсказка" id="149"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПродуктыПереработкиЗернаВЕТИС" id="159">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.f40320a8-b5ca-463a-ae82-ef2b9ead1aab</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПродуктыПереработкиЗернаВЕТИСКонтекстноеМеню" id="160"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПродуктыПереработкиЗернаВЕТИСРасширеннаяПодсказка" id="161"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПодконтрольнаяПродукцияСАТУРН" id="156">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.133c6aad-380f-49a9-9301-2545e31bd290</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПодконтрольнаяПродукцияСАТУРНКонтекстноеМеню" id="157"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПодконтрольнаяПродукцияСАТУРНРасширеннаяПодсказка" id="158"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаМорепродуктыПодконтрольныеВЕТИС" id="150">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.3d3003b6-c787-4182-8957-1ae83bf80d15</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаМорепродуктыПодконтрольныеВЕТИСКонтекстноеМеню" id="151"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаМорепродуктыПодконтрольныеВЕТИСРасширеннаяПодсказка" id="152"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКормаДляЖивотныхПодконтрольныеВЕТИС" id="195">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.157ded26-307d-497a-9c23-14f32c053df2</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКормаДляЖивотныхПодконтрольныеВЕТИСКонтекстноеМеню" id="196"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКормаДляЖивотныхПодконтрольныеВЕТИСРасширеннаяПодсказка" id="197"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКормаДляЖивотныхБезВЕТИС" id="192">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.8f56db2c-17bd-4030-a553-b6edaba3c4cf</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКормаДляЖивотныхБезВЕТИСКонтекстноеМеню" id="193"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКормаДляЖивотныхБезВЕТИСРасширеннаяПодсказка" id="194"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаМясоПодконтрольноеВЕТИС" id="189">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.aa12cd19-74b6-4436-a3a8-0cd0eab7c744</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаМясоПодконтрольноеВЕТИСКонтекстноеМеню" id="190"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаМясоПодконтрольноеВЕТИСРасширеннаяПодсказка" id="191"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаВетеринарныеПрепараты" id="186">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.357d0d3b-9288-41c0-8f4f-249fac9bc429</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаВетеринарныеПрепаратыКонтекстноеМеню" id="187"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаВетеринарныеПрепаратыРасширеннаяПодсказка" id="188"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаИгрыИИгрушкиДляДетей" id="183">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.6b3e5f13-bf88-43a1-b9c1-c7359185b036</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаИгрыИИгрушкиДляДетейКонтекстноеМеню" id="184"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаИгрыИИгрушкиДляДетейРасширеннаяПодсказка" id="185"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаРадиоэлектроннаяПродукция" id="180">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.89291e90-249a-4da0-b2d7-e2edd54765da</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаРадиоэлектроннаяПродукцияКонтекстноеМеню" id="181"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаРадиоэлектроннаяПродукцияРасширеннаяПодсказка" id="182"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаТитановаяМеталлопродукция" id="177">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.cb53e8cb-cef5-43d3-985e-889604fcbe2c</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаТитановаяМеталлопродукцияКонтекстноеМеню" id="178"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаТитановаяМеталлопродукцияРасширеннаяПодсказка" id="179"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКонсервированнаяПродукцияПодконтрольнаяВЕТИС" id="174">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.5b914332-83d4-4889-a0ab-3fc17bec2428</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКонсервированнаяПродукцияПодконтрольнаяВЕТИСКонтекстноеМеню" id="175"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКонсервированнаяПродукцияПодконтрольнаяВЕТИСРасширеннаяПодсказка" id="176"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаКонсервированнаяПродукцияБезВЕТИС" id="171">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.eac5c937-6929-42aa-9142-87ebdc7a2722</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаКонсервированнаяПродукцияБезВЕТИСКонтекстноеМеню" id="172"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаКонсервированнаяПродукцияБезВЕТИСРасширеннаяПодсказка" id="173"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаРастительныеМасла" id="168">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.fb3c71a5-f264-4da2-951f-8111d586620e</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаРастительныеМаслаКонтекстноеМеню" id="169"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаРастительныеМаслаРасширеннаяПодсказка" id="170"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаОптоволокноИОптоволоконнаяПродукция" id="165">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.42eb9b75-1bfc-49c9-8dbe-53bdf99ac674</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаОптоволокноИОптоволоконнаяПродукцияКонтекстноеМеню" id="166"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаОптоволокноИОптоволоконнаяПродукцияРасширеннаяПодсказка" id="167"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+																<RadioButtonField name="ОсобенностьУчетаПарфюмерныеИКосметическиеСредстваИБытоваяХимия" id="162">
+																	<DataPath>ОсобенностьУчета</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</Title>
+																	<TitleLocation>None</TitleLocation>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Подсказка задается программно</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																	<RadioButtonType>Auto</RadioButtonType>
+																	<ChoiceList>
+																		<xr:Item>
+																			<xr:Presentation/>
+																			<xr:CheckState>0</xr:CheckState>
+																			<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																				<Presentation/>
+																				<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.bbe3185f-cd9a-4fe9-b9fe-65e6011b6489</Value>
+																			</xr:Value>
+																		</xr:Item>
+																	</ChoiceList>
+																	<ContextMenu name="ОсобенностьУчетаПарфюмерныеИКосметическиеСредстваИБытоваяХимияКонтекстноеМеню" id="163"/>
+																	<ExtendedTooltip name="ОсобенностьУчетаПарфюмерныеИКосметическиеСредстваИБытоваяХимияРасширеннаяПодсказка" id="164"/>
+																	<Events>
+																		<Event name="OnChange">ОсобенностьУчетаТовараПриИзменении</Event>
+																	</Events>
+																</RadioButtonField>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаТипНоменклатурыТара" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип номенклатуры тара</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Item type package</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТипНоменклатурыТараРасширеннаяПодсказка" id="29"/>
+									<ChildItems>
+										<RadioButtonField name="ТипНоменклатурыМногооборотнаяТара" id="23">
+											<DataPath>ТипНоменклатуры</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подсказка задается программно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипНоменклатурыМногооборотнаяТараКонтекстноеМеню" id="24"/>
+											<ExtendedTooltip name="ТипНоменклатурыМногооборотнаяТараРасширеннаяПодсказка" id="25"/>
+											<Events>
+												<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаТипНоменклатурыНабор" id="34">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип номенклатуры набор</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Item type set</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТипНоменклатурыНаборРасширеннаяПодсказка" id="35"/>
+									<ChildItems>
+										<RadioButtonField name="ТипНоменклатурыНабор" id="14">
+											<DataPath>ТипНоменклатуры</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подсказка задается программно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНоменклатуры.EnumValue.Набор</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипНоменклатурыНаборКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="ТипНоменклатурыНаборРасширеннаяПодсказка" id="16"/>
+											<Events>
+												<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаКолонкиПраво" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Колонки право</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Columns right</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКолонкиПравоРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаТипНоменклатурыУслуга" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип номенклатуры услуга</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Item type service</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТипНоменклатурыУслугаРасширеннаяПодсказка" id="33"/>
+									<ChildItems>
+										<RadioButtonField name="ТипНоменклатурыУслуга" id="20">
+											<DataPath>ТипНоменклатуры</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подсказка задается программно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНоменклатуры.EnumValue.Услуга</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипНоменклатурыУслугаКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="ТипНоменклатурыУслугаРасширеннаяПодсказка" id="22"/>
+											<Events>
+												<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+										<UsualGroup name="ГруппаОсобенностиУслуги" id="67">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Особенности учета услуг</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Service accounting features</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОсобенностиУслугиРасширеннаяПодсказка" id="68"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОсобенностиУслугиОтступ" id="69">
+													<ContextMenu name="ДекорацияОсобенностиУслугиОтступКонтекстноеМеню" id="70"/>
+													<ExtendedTooltip name="ДекорацияОсобенностиУслугиОтступРасширеннаяПодсказка" id="71"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаОсобенностиУслугиЗначения" id="72">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Значения особенностей учета услуг</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Service accounting feature values</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОсобенностиУслугиЗначенияРасширеннаяПодсказка" id="73"/>
+													<ChildItems>
+														<RadioButtonField name="ОсобенностьУчетаОрганизациейПродавцом" id="77">
+															<DataPath>ОсобенностьУчета</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подсказка задается программно</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.40a55c86-9e43-4849-9e41-8d0bb9ee9c44</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ОсобенностьУчетаОрганизациейПродавцомКонтекстноеМеню" id="78"/>
+															<ExtendedTooltip name="ОсобенностьУчетаОрганизациейПродавцомРасширеннаяПодсказка" id="79"/>
+															<Events>
+																<Event name="OnChange">ОсобенностьУчетаУслугиПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<RadioButtonField name="ОсобенностьУчетаОрганизациейПоАгентскойСхеме" id="80">
+															<DataPath>ОсобенностьУчета</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подсказка задается программно</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.bca5af74-66f6-44f5-8fa6-cee0b448788a</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ОсобенностьУчетаОрганизациейПоАгентскойСхемеКонтекстноеМеню" id="81"/>
+															<ExtendedTooltip name="ОсобенностьУчетаОрганизациейПоАгентскойСхемеРасширеннаяПодсказка" id="82"/>
+															<Events>
+																<Event name="OnChange">ОсобенностьУчетаУслугиПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+														<RadioButtonField name="ОсобенностьУчетаПартнером" id="83">
+															<DataPath>ОсобенностьУчета</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Подсказка задается программно</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+															<RadioButtonType>Auto</RadioButtonType>
+															<ColumnsCount>1</ColumnsCount>
+															<ChoiceList>
+																<xr:Item>
+																	<xr:Presentation/>
+																	<xr:CheckState>0</xr:CheckState>
+																	<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																		<Presentation/>
+																		<Value xsi:type="xr:DesignTimeRef">5647c4ea-0d6d-4d75-8261-5aa213fca033.c7cc0c7c-147d-47ff-b1e1-80827888a643</Value>
+																	</xr:Value>
+																</xr:Item>
+															</ChoiceList>
+															<ContextMenu name="ОсобенностьУчетаПартнеромКонтекстноеМеню" id="84"/>
+															<ExtendedTooltip name="ОсобенностьУчетаПартнеромРасширеннаяПодсказка" id="85"/>
+															<Events>
+																<Event name="OnChange">ОсобенностьУчетаУслугиПриИзменении</Event>
+															</Events>
+														</RadioButtonField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаТипНоменклатурыРабота" id="30">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип номенклатуры работа</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Item type work</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаТипНоменклатурыРаботаРасширеннаяПодсказка" id="31"/>
+									<ChildItems>
+										<RadioButtonField name="ТипНоменклатурыРабота" id="17">
+											<DataPath>ТипНоменклатуры</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подсказка задается программно</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Tooltip is set from 1C:Enterprise script</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<RadioButtonType>Auto</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ТипыНоменклатуры.EnumValue.Работа</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ТипНоменклатурыРаботаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="ТипНоменклатурыРаботаРасширеннаяПодсказка" id="19"/>
+											<Events>
+												<Event name="OnChange">ТипНоменклатурыПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанельФормы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель формы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Form command bar</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Button name="ОК" id="6">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command.ОК</CommandName>
+					<ExtendedTooltip name="ОКРасширеннаяПодсказка" id="7"/>
+				</Button>
+				<Button name="Отмена" id="4">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.Отмена</CommandName>
+					<ExtendedTooltip name="ОтменаРасширеннаяПодсказка" id="5"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТипНоменклатуры" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип номенклатуры</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item type</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсобенностьУчета" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Особенность учета</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Accounting feature</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>OK</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОК</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Cancel</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ТипНоменклатуры">
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыНоменклатуры</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ОсобенностьУчета">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

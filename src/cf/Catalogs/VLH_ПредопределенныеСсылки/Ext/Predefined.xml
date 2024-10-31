@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.17">
+	<Item id="495c9a7f-50bf-4505-85b2-d69b17c674c7">
+		<Name>Конфигурация</Name>
+		<Code>000000001</Code>
+		<Description>Конфигурация</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="34d167dd-4bbf-47ae-b60b-a7d94bdbd731">
+		<Name>Остекление</Name>
+		<Code>000000003</Code>
+		<Description>Остекление</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="49b20348-9d7e-4f21-b327-29f13c4603cb">
+		<Name>Размер</Name>
+		<Code>000000004</Code>
+		<Description>Размер</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1d1b9a59-d78f-4d10-9177-5a332d9512f0">
+		<Name>Цвет</Name>
+		<Code>000000002</Code>
+		<Description>Цвет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

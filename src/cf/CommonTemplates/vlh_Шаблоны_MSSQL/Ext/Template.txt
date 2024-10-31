@@ -1,0 +1,77 @@
+﻿[БазыДанных]
+
+Список               = SELECT name FROM master.dbo.sysdatabases ORDER BY name
+Создание             = CREATE DATABASE %ИмяБД%
+Пропускать           = master,model,msdb,tempdb,Northwind,pubs
+ДлинаИмени           = 20
+ДопустимыеСимволы    = ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_
+КолвоЗаписейВТаблице = SELECT count(*) FROM %ИмяТаблицы%
+Версия               = SELECT @@VERSION
+
+[Индексы]
+
+Создание             = CREATE INDEX %ИмяИндекса% ON %ИмяТаблицы% (%СоставПолей%)
+СозданиеУникального  = CREATE UNIQUE INDEX %ИмяИндекса% ON %ИмяТаблицы% (%СоставПолей%)
+Удаление             = DROP INDEX %ИмяТаблицы%.%ИмяИндекса%
+СозданиеКлюча        = ALTER TABLE %ИмяТаблицы% ADD CONSTRAINT %ИмяКлюча% PRIMARY KEY (%СоставПолей%)
+УдалениеКлюча        = ALTER TABLE %ИмяТаблицы% DROP CONSTRAINT %ИмяКлюча%
+МаксимальнаяДлина    = 16
+
+[Типы]
+
+numeric  = numeric
+ntext    = ntext
+datetime = datetime
+nchar    = nchar
+nvarchar = nvarchar
+binary   = binary
+image    = image
+
+Числовые = numeric
+СДлиной  = numeric,nchar,nvarchar,binary
+
+[СтруктураТаблиц]
+СписокТаблиц         = SELECT table_name AS name FROM %ИмяБД%.INFORMATION_SCHEMA.TABLES ORDER BY name
+СписокТаблицПоМаске  = SELECT table_name AS name FROM %ИмяБД%.INFORMATION_SCHEMA.TABLES WHERE table_name like '%Маска%' ORDER BY name
+	
+СписокВсехКолонок    = SELECT table_name, column_name, ordinal_position, data_type, character_maximum_length, numeric_precision, numeric_scale
+	FROM %ИмяБД%.INFORMATION_SCHEMA.COLUMNS
+	ORDER BY table_name, ordinal_position
+
+СписокКолонокТаблицы = SELECT column_name, ordinal_position, data_type, character_maximum_length, numeric_precision, numeric_scale
+	FROM %ИмяБД%.INFORMATION_SCHEMA.COLUMNS
+	WHERE table_name='%ИмяТаблицы%'
+	ORDER BY ordinal_position
+
+СписокВсехКлючей     = SELECT table_name, constraint_name as name, column_name
+	FROM %ИмяБД%.INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+	ORDER BY table_name, ordinal_position
+
+СписокКлючейТаблицы  = SELECT constraint_name as name, column_name
+	FROM %ИмяБД%.INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+	WHERE table_name='%ИмяТаблицы%'
+	ORDER BY ordinal_position
+
+СписокВсехИндексов   = SELECT tab.name as table_name, ind.name as index_name, col.name as column_name, (ind.status & 2)/2 AS is_unique
+	FROM sysobjects as tab
+		join sysindexes as ind on tab.id=ind.id
+		join sysindexkeys as colid on (tab.id=colid.id) and (ind.indid=colid.indid)
+		join syscolumns as col on (tab.id=col.id) and(colid.colid=col.colid)
+	WHERE tab.xtype = 'U' AND (ind.status & 2048 = 0)
+	ORDER BY tab.name, ind.indid, colid.keyno
+
+СписокИндексовТаблицы = SELECT ind.name as index_name, col.name as column_name, (ind.status & 2)/2 AS is_unique
+	FROM sysobjects as tab
+		join sysindexes as ind on tab.id=ind.id
+		join sysindexkeys as colid on (tab.id=colid.id) and (ind.indid=colid.indid)
+		join syscolumns as col on (tab.id=col.id) and(colid.colid=col.colid)
+	WHERE tab.xtype = 'U' AND (ind.status & 2048 =0)  and (tab.name='%ИмяТаблицы%')
+	ORDER BY ind.indid, colid.keyno
+
+[ПреобразованиеКолонок]
+
+ДобавлениеКолонки = ALTER TABLE %ИмяТаблицы% ADD %ИмяКолонки% %ТипКолонки%
+УдалениеКолонки   = ALTER TABLE %ИмяТаблицы% DROP COLUMN %ИмяКолонки%
+ИзменениеКолонки  = ALTER TABLE %ИмяТаблицы% ALTER COLUMN %ИмяКолонки% %ТипКолонки%
+Возможно          = 1
+Допустимые        = nchar->nvarchar,nvarchar->nchar,nvarchar->ntext,nchar->ntext,ntext->nvarchar,ntext->nchar
