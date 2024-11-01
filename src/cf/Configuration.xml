@@ -256,6 +256,7 @@
 			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>VLH_ПредопределенныеСсылки</Catalog>
 			<Catalog>vlh_НоменклатурныеГруппыАХ</Catalog>
+			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
 			<Enum>ГрадацииКачества</Enum>
 			<Enum>ТипыНоменклатуры</Enum>
 			<InformationRegister>vlh_НастройкиДляЗагрузкиНоменклатурыВ1сИзАХ</InformationRegister>
