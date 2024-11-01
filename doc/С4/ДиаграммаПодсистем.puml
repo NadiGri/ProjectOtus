@@ -1,0 +1,35 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title Диаграмма загрузки НСИ
+
+Person(customer, "Бухгалтер", "Бухгалтер который инициализирует загрузку товарного документа")
+
+System_Ext(AXAPTA, "AXAPTA", "Система управленческого учета с инормацией об НСИ")
+
+System_Boundary(ERP, "1C: ERP", "Для бух. учета..."){
+    Container(НСИ, "Подсистема работы с НСИ")
+    Container(ОбменСАх, "Подсистема для обмена данными НСИ в АХ")
+}
+
+
+' Связи
+
+' 1С ERP
+
+Rel(customer, ERP, "Uses")
+
+' Прочие системы
+Rel(ОбменСАх, AXAPTA, "SQL")
+
+Rel_Back(ОбменСАх, AXAPTA, "SQL")
+
+Rel(ОбменСАх, НСИ, "")
+
+Rel_Back(ОбменСАх, НСИ, "")
+
+@enduml
